@@ -254,7 +254,7 @@ connection.connect(function(err) {
       // for (let i=0; i <res.length; i++){
   //   employees.push(res[i].first_name + " " + res[i].last_name);
   // }
-    let employees = res.map(employee => ({name: employees.first_name + " " + employees.last_name, value: employees.id}))
+    let employees = res.map(employee => ({name: employee.first_name + " " + employee.last_name, value: employee.id}))
   ​
     inquirer
     .prompt([
